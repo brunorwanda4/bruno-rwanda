@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+*{
+    font-family: sans-serif;
+}
 .dark {
     @apply bg-gray-950 text-white
 }
@@ -21,14 +23,19 @@
     background: rgba(0, 128, 0, 0.404);
 }
 
-@keyframes example {
-    0% {background: rebeccapurple; left: 200px; top: 0px;}
-    25% {background: burlywood; left: 0px; top: 0 ; }
-    50% {background: blue; left: 0px; top:0px;}
-    75% {background: green; left: 0px; top: 0px}
-    100%{background:white; left: 0px; top: 0px}
+.nav-list {
+    @apply flex font-bold text-xl  hover:text-green-600 duration-300 text-green-950 dark:text-white dark:hover:text-green-400
 }
-.leaning:hover {
-   animation: example 5s linear 2s infinite alternate;
-    @apply relative animate-spin
+
+.green-cool-color{
+    color: linear-gradient(
+    92.23deg,
+    #56ff56 21.43%,
+    #04682e 50.63%,
+    #3bace2 100%,
+    #406aff 117.04%
+  );
+}
+.bg-color-green-cool{
+    background: rgba(4, 104, 46, 0.281);
 }

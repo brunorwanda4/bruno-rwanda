@@ -1,25 +1,25 @@
 import { useState } from 'react'
-import Header from './components/Header'
-import About from './components/About'
-import Services from './components/Services'
-import Portfolio from './components/Portfolio'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import Hero from './components/Hero'
 const App = () => {
   const [darkMode,setDarkMode] = useState(true);
   const toggleDarkMode = () => {
     setDarkMode(preDarkMode => !preDarkMode);
   }
+
+  // person 
+
+  const person =[
+    // names
+    {
+      Fname : ' Bruno',
+      Sname : 'Rwanda',
+      age : new Date ("October 5 2006"),
+    },
+  ]
+
   return (
     <section className={` w-full h-full ${darkMode ? 'dark' : 'light'} `}>
-     <Header toggleDarkMode={toggleDarkMode}/>
-     <Hero/>
-     <About/>
-     <Services/>
-     <Portfolio/>
-     <Contact/>
-     <Footer/>
+    App 
+    <span className=' text-green-500'>Bruno </span>
     </section>
   )
 }
